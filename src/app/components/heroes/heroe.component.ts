@@ -25,7 +25,9 @@ export class HeroeComponent implements OnInit {
 
   guardar(){
     console.log(this.heroe);
-    this.heroesService.nuevoHeroe( this.heroe ).;
+    this.heroesService.nuevoHeroe( this.heroe ).subscribe(data => {
+      console.log(data.json);
+    });
   }
 
 }
