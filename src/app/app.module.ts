@@ -11,12 +11,16 @@ import { FormsModule } from "@angular/forms";
 //servicios
 import { HeroesService } from "./services/heroes.service";
 
+//pipes
+import { KeysPipe } from './pipes/keys.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
