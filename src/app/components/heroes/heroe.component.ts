@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from "@angular/router";
   styles: []
 })
 export class HeroeComponent implements OnInit {
-  private heroe: Heroe;
+  public heroe: Heroe;
 
   nuevo: boolean = false;
   id: string;
